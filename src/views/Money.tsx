@@ -2,12 +2,11 @@ import Layout from '../components/Layout';
 import React from 'react';
 import styled from 'styled-components';
 import {CategorySection} from './Money/CategorySection';
-import {TagSection} from './Money/TagSection';
+import {TagsSection} from './Money/TagsSection';
 import {NotesSection} from './Money/NotesSection';
 import {NumberSection} from './Money/NumberSection';
 
 const MyLayout = styled(Layout)`
-  border: 1px solid red;
   display: flex;
   flex-direction: column;
 `;
@@ -15,15 +14,8 @@ const MyLayout = styled(Layout)`
 function Money() {
   return (
     <MyLayout>
-      <TagSection>
-        <ol>
-          <li>衣</li>
-          <li>食</li>
-          <li>住</li>
-          <li>行</li>
-        </ol>
-        <button>新增标签</button>
-      </TagSection>
+      <TagsSection>
+      </TagsSection>
       <NotesSection>
         <label>
           <span>备注</span>
