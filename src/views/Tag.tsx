@@ -25,10 +25,9 @@ const InputWrapper = styled.div`
   margin-top: 8px;
 `
 const Tag: React.FC = () => {
-  const {findTag} = useTags();
+  const {findTag, updateTag} = useTags();
   let {id} = useParams<Params>();
   const tag = findTag(parseInt(id));
-  console.log(id);
   return (
     <Layout>
       <TopBar>
@@ -37,7 +36,12 @@ const Tag: React.FC = () => {
         <Icon/>
       </TopBar>
       <InputWrapper>
-        <Input label="标签名" type="text" placeholder="标签名" value={tag.name}/>
+        <Input label="标签名" type="text" placeholder="标签名"
+               value={tag.name}
+               onChange={(e) => {
+                 updateTag(tag.id, {name: e.target.value})
+               }}
+        />
       </InputWrapper>
       <Center>
         <Space/>
