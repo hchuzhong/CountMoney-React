@@ -27,7 +27,14 @@ const useTags = () => {
     tagsClone.splice(index, 1, {id: id, name: obj.name});
     setTags(tagsClone);
   };
-  return {tags, setTags, findTag, updateTag, findTagIndex};
+  const deleteTag = (id: number) => {
+    const index = findTagIndex(id);
+    // 深拷贝 tags 得到新的 tags
+    const tagsClone = JSON.parse(JSON.stringify(tags));
+    tagsClone.splice(index, 1);
+    setTags(tagsClone);
+  }
+  return {tags, setTags, findTag, updateTag, findTagIndex, deleteTag};
 };
 
 export {useTags};
