@@ -284,7 +284,7 @@
   resolved "https://registry.npm.taobao.org/@babel/helper-validator-identifier/download/@babel/helper-validator-identifier-7.10.3.tgz#60d9847f98c4cea1b279e005fdb7c28be5412d15"
   integrity sha1-YNmEf5jEzqGyeeAF/bfCi+VBLRU=
 
-"@babel/helper-validator-identifier@^7.29.7":
+"@babel/helper-validator-identifier@^7.12.11", "@babel/helper-validator-identifier@^7.29.7":
   version "7.29.7"
   resolved "https://registry.yarnpkg.com/@babel/helper-validator-identifier/-/helper-validator-identifier-7.29.7.tgz#bd87084ced0c796ec46bda492de6e83d29e89fc2"
   integrity sha512-qehxGkRj55h/ff8EMaJ+cYhyaKlHIxqYDn682wQD7RNp9UujOQsHog2uS0r2vzr4pW+sXf90NeeayjcNaX3fFg==
@@ -2878,11 +2878,6 @@ call-bind@^1.0.0:
   dependencies:
     function-bind "^1.1.1"
     get-intrinsic "^1.0.2"
-
-call-me-maybe@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.npm.taobao.org/call-me-maybe/download/call-me-maybe-1.0.1.tgz#26d208ea89e37b5cbde60250a15f031c16a4d66b"
-  integrity sha1-JtII6onje1y95gJQoV8DHBak1ms=
 
 caller-callsite@^2.0.0:
   version "2.0.0"
@@ -11321,9 +11316,9 @@ webpack@4.42.0:
     webpack-sources "^1.4.1"
 
 websocket-driver@>=0.5.1:
-  version "0.7.4"
-  resolved "https://registry.npm.taobao.org/websocket-driver/download/websocket-driver-0.7.4.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fwebsocket-driver%2Fdownload%2Fwebsocket-driver-0.7.4.tgz#89ad5295bbf64b480abcba31e4953aca706f5760"
-  integrity sha1-ia1Slbv2S0gKvLox5JU6ynBvV2A=
+  version "0.7.5"
+  resolved "https://registry.yarnpkg.com/websocket-driver/-/websocket-driver-0.7.5.tgz#569d22764ab21f2de20af0e74b411e8ae5a0fa46"
+  integrity sha512-ZL2+3c7kMBdIRCMz6l8jQMHyGVxj+UL+xVk74Ombiciboca8rHa15L86B19E5oh1pL9Ii/uj54gtsIrZGMo6zA==
   dependencies:
     http-parser-js ">=0.5.1"
     safe-buffer ">=5.1.0"
